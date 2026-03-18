@@ -9,6 +9,26 @@ body {
     font-family: Rubik, sans-serif;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
 a {
     text-decoration: none;
 }
@@ -44,12 +64,24 @@ button {
     margin-bottom: 30px;
 }
 
-.text {
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+}
+
+.main-img {
+    align-self: flex-end;
+}
+
+.main .text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.375;
     color: #95a1bb;
     margin-bottom: 40px;
+    max-width: 380px;
 }
 
 .btn {
@@ -77,6 +109,17 @@ button {
 
 .rates-section .text {
     margin-bottom: 40px;
+}
+
+.rates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .title {
@@ -171,6 +214,20 @@ th, td {
     color: #363940;
 }
 
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 input, select, fieldset, textarea, label, legend, input::placeholder, textarea::placeholder, select::placeholder {
     border-radius: 4px;
     font-weight: 400;
@@ -189,6 +246,13 @@ input[type="text"] {
 input[type="email"], input[type="password"],input[type="date"], select{
     width: 230px;
     height: 50px;
+    flex-grow: 1;
+}
+
+.stack,
+fieldset {
+    display: flex;
+    column-gap: 30px;
 }
 
 fieldset {
@@ -223,6 +287,7 @@ footer {
     height: 62px;
     background: #0a61f7;
     padding: 20px 0;
+    text-align: center;
 }
 
 small {
